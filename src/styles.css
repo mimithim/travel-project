@@ -1,6 +1,5 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: #272044;
 }
 
 .container {
@@ -34,7 +33,7 @@ section {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
     url("../images/ParisByMimiThim.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,7 +80,7 @@ header a {
 }
 
 main {
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   margin: 0 auto;
 }
 
