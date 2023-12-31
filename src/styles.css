@@ -15,6 +15,8 @@ body {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .grid-2-columns {
@@ -28,7 +30,7 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 header {
@@ -80,13 +82,13 @@ header a {
 
 main {
   background-color: white;
+  margin: 0 auto;
 }
 
 main h2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  margin: 0;
   letter-spacing: 5px;
   color: #272044;
   opacity: 0.3;
@@ -98,7 +100,6 @@ main h3 {
   font-size: 40px;
   line-height: 1.5;
   color: #272044;
-  margin: 0;
 }
 
 main p {
@@ -170,13 +171,12 @@ footer a {
   header a {
     font-size: 12px;
   }
-
-  section {
-    padding: 30px;
-  }
-
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
