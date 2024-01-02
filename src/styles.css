@@ -91,6 +91,17 @@ section.secondary h2 {
   text-transform: uppercase;
 }
 
+section.third h2 {
+  color: #b9b7c2;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
 section {
   max-width: 1200px;
   margin: 0 auto;
@@ -98,6 +109,12 @@ section {
 }
 
 section.secondary {
+  background: #f8f8f8;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+section.third {
   background: #f8f8f8;
   max-width: 1400px;
   margin: 0 auto;
