@@ -257,7 +257,7 @@ footer a {
   opacity: 0.7;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   header {
     padding: 60px 0;
   }
@@ -279,6 +279,7 @@ footer a {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+    margin: 0 auto;
   }
 
   .maps-1,
