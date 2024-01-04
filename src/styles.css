@@ -30,8 +30,7 @@ body {
 
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 50px;
-  padding: 10px;
+  margin: 30px;
 }
 
 .grid-3-columns-with-first-narrow {
