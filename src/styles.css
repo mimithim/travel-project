@@ -224,20 +224,26 @@ footer a {
 
 @media (max-width: 600px) {
   header {
-    margin: 0 auto;
-    padding: 0;
+    padding: 30px 0;
   }
 
   header h1 {
     font-size: 48px;
+    margin-top: 20px;
   }
 
   header h2 {
     font-size: 20px;
+    margin: 0;
   }
 
   header h3 {
     font-size: 12px;
+  }
+
+  header a {
+    font-size: 12px;
+    margin-bottom: 20px;
   }
 
   .grid {
