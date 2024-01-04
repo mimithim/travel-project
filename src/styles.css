@@ -17,11 +17,8 @@ body {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
-  margin: 0 auto;
-  filter: opacity(90%);
-  border-radius: 3px;
 }
 
 .grid-2-columns {
@@ -30,16 +27,28 @@ body {
 
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 30px;
 }
 
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
+
 .card {
   background: white;
   margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .card-body {
@@ -48,25 +57,6 @@ body {
 
 .card-footer {
   padding: 0 30px 30px;
-}
-
-.maps-1 {
-  max-width: 300px;
-  max-height: 300px;
-  display: block;
-  margin: 0 auto;
-}
-.maps-2 {
-  max-width: 300px;
-  max-height: 300px;
-  display: block;
-  margin: 0 auto;
-}
-.maps-3 {
-  max-width: 300px;
-  max-height: 300px;
-  display: block;
-  margin: 0 auto;
 }
 
 .btn {
@@ -82,55 +72,25 @@ body {
   background-color: #462cb3;
   text-decoration: none;
 }
-section.secondary h2 {
-  color: #b9b7c2;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 5px;
-  color: #272044;
-  opacity: 0.3;
-  text-transform: uppercase;
-}
-
-section.third h2 {
-  color: #b9b7c2;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 5px;
-  color: #272044;
-  opacity: 0.3;
-  text-transform: uppercase;
-}
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 100px;
 }
 
 section.secondary {
   background: #f8f8f8;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-section.third {
-  background: #f8f8f8;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 50px 0;
 }
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
-    url("../images/ParisByMimiThim.jpg");
+    url("/images/ParisByMimiThim.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 100px 0;
+  padding: 200px 0;
 }
 
 header h1 {
@@ -171,14 +131,14 @@ header a {
 }
 
 main {
-  background-color: rgb(247, 247, 247);
-  margin: 0 auto;
+  background-color: white;
 }
 
 main h2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
+  margin: 0;
   letter-spacing: 5px;
   color: #272044;
   opacity: 0.3;
@@ -190,6 +150,7 @@ main h3 {
   font-size: 40px;
   line-height: 1.5;
   color: #272044;
+  margin: 0;
 }
 
 main h4 {
@@ -209,7 +170,6 @@ main h5 {
 }
 
 main p {
-  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -224,10 +184,10 @@ footer {
       rgba(39, 32, 68, 0.9),
       rgba(39, 32, 68, 0.9)
     ),
-    url("../images/footer-paris.jpg");
+    url("/images/footer-paris.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px 0;
 }
 
 footer h3 {
@@ -240,7 +200,6 @@ footer p {
   font-weight: 400;
   font-size: 16px;
   opacity: 0.7;
-  margin-right: 20px;
   line-height: 24px;
 }
 
@@ -259,7 +218,7 @@ footer a {
   opacity: 0.7;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -275,24 +234,21 @@ footer a {
   header h3 {
     font-size: 12px;
   }
-  header a {
-    font-size: 12px;
-  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
-    margin: 0 auto;
-  }
-
-  .maps-1,
-  .maps-2,
-  .maps-3 {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
   }
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
