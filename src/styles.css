@@ -1,6 +1,5 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: #f5f5f5e3;
 }
 
 .container {
@@ -85,9 +84,6 @@ section.secondary {
 }
 
 section.grid-2-columns {
-  background: #f8f8f8;
-}
-section.grid-3-columns {
   background: #f8f8f8;
 }
 
