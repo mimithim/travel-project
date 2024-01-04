@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  background: #ffffff;
 }
 
 .container {
@@ -42,6 +43,8 @@ body {
 
 .instagram-embeds {
   margin: 0 auto;
+  display: block;
+  justify-content: center;
 }
 
 .card {
@@ -189,7 +192,6 @@ footer {
 
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
 }
 
 footer h3 {
